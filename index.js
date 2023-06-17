@@ -1,6 +1,6 @@
 function fetchCoordinates(cityName) {
     const apiKey = "0593c66ed827d3c07041a568a2f98336";
-    const cityURL = `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${apiKey}`;
+    const cityURL = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${apiKey}`;
   
     return fetch(cityURL)
       .then((response) => response.json())
